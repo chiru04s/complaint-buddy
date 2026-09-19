@@ -38,6 +38,8 @@ app.use(
 
 const allowedOrigins = [
   "http://localhost:5173",
+  "https://complaint-buddy.vercel.app",
+  "https://complaint-buddy-gel4a0i6r-more-sakshis-projects.vercel.app",
   process.env.CLIENT_URL
 ].filter(Boolean);
 
