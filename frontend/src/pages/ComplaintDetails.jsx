@@ -94,7 +94,7 @@ export default function ComplaintDetails() {
                 {complaint.evidence.map((ev, i) => (
                   <a
                     key={i}
-                    href={`${import.meta.env.VITE_API_URL?.replace('/api', '') || 'http://localhost:5000'}/uploads/${ev.filename}`}
+                    href={`${(import.meta.env.VITE_API_URL || 'http://localhost:5000/api').replace(/\/api\/?$/, '')}/uploads/${ev.filename}`}
                     target="_blank"
                     rel="noreferrer"
                     className="flex items-center gap-1 text-xs bg-slate-100 hover:bg-slate-200 text-slate-600 px-3 py-2 rounded-lg"
